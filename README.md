@@ -9,6 +9,7 @@ You must have [`vagrant`](https://vagrantup.com) installed. You'll also want to 
 
 ```
 vagrant plugin install vagrant-bindfs
+vagrant plugin install vagrant-hostsupdater
 ```
 
 ## Instructions
@@ -17,6 +18,8 @@ Run `vagrant up` then grab some ☕
 
 You should see a bunch of ascii art at the end that says "read above", your VM should be running at this point. You can always double check by running `vagrant global-status`
 
+Hosts Updater should have added the `example.ogp` host to your `/etc/hosts` file.
+
 ### Other vagrant commands
 
 You can SSH into the VM with `vagrant ssh`
@@ -24,6 +27,14 @@ You can SSH into the VM with `vagrant ssh`
 To shutdown the VM, run `vagrant halt`
 
 To kill the VM, run `vagrant destroy`
+
+## Xdebug Examples
+
+Navigate to `example.ogp` in your browser to see examples.
+
+Turn on the telephone icon in PHPStorm and setup path mappings on first run.
+
+After that you're off to the races! Vroom vroom.
 
 ### Vagrant+Puppet Config Generation
 
